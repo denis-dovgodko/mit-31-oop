@@ -22,3 +22,6 @@ class Consumers(collections.abc.MutableSequence):
     def __getitem__(self, consumer):
         if consumer in self.__consumers:
             return self.__consumers[self.__consumers.index(consumer)]
+        
+    def __iter__(self):
+        return iter(self.__consumers)
