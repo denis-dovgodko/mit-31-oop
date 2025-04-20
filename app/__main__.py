@@ -10,9 +10,12 @@ if __name__ == "__main__":
     owner2.tax_id = 342
 
     company1 = Company("Intellias", 10000)
+    company2 = Company("Test", 10000)
     company1.add_entity(owner1.name, 5000)
     company1.add_entity(owner2.name, 3000)
     company1.set_annual_profit(2025, 84345)
+    company2.add_entity(owner1.name, 3000)
+    company2.add_entity(owner3.name, 3000)
 
     print(yaml_repository.find(OwnerList.path, "name", "Alice").get("is_resident"))
 
