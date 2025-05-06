@@ -1,1 +1,1 @@
-from .payments import PaymentSystem
+from .payments import PaymentSystem, DefaultPaymentSystem
